@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReaTure - Nutrition Products</title>
+    <link rel="stylesheet" href="styles (1).css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+      <div class="top-nav-left">
+        <span>Resource&Download</span>
+        <span>Content Library</span>
+        <span>About Reature</span>
+      </div>
+      <div class="top-nav-right">
+        <div class="help-center">
+          <span>Help Centre</span>
+          <div class="status-dot"></div>
+        </div>
+        <span>FAQs</span>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="header-container">
+        <!-- Logo -->
+        <div class="logo">
+          <img src=".png" alt="" />
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <button class="nav-item dropdown">
+            Products <span class="arrowSign">▼</span>
+          </button>
+          <button class="nav-item dropdown">
+            Offers <span class="arrowSign">▼</span>
+          </button>
+          <button class="nav-item dropdown">
+            Events <span class="arrowSign">▼</span>
+          </button>
+          <button class="nav-item dropdown">
+            Success story <span class="arrowSign">▼</span>
+          </button>
+          <button class="nav-item dropdown">
+            Blogs <span class="arrowSign">▼</span>
+          </button>
+        </nav>
+
+        <!-- Search and Icons -->
+        <div class="header-actions">
+          <div class="search-box">
+            <input
+              type="text"
+              placeholder="Search Products..."
+              id="searchInput"
+            />
+            <span class="search-icon">🔍</span>
+          </div>
+          <div class="cart-icon">
+            <img
+              src="./Shopping_Bag-removebg-preview.png"
+              alt=""
+              class="cart-symbol"
+            />
+            <span class="cart-count">1</span>
+          </div>
+          <div class="user-profile">
+            <img
+              src="./Group_204-removebg-preview.png"
+              alt=""
+              class="user-avatar"
+            />
+            <span class="user-name">Hari Om</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+      <div class="hero-content">
+        <div class="hero-images">
+            <img  class="backimg"src="Nue.jpg" alt=""/>    
+            </div>
+        <div class="hero-text">
+          <h2>NUTRITION</h2>
+          <p>Balanced Nutrition, Vibrant Living</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Sidebar Filters -->
+      <aside class="sidebar">
+        <div class="filters-container">
+          <div class="filters-header">
+            <h3>Filters</h3>
+            <button class="clear-btn">Clear</button>
+          </div>
+
+          <!-- By Category -->
+          <div class="filter-section">
+            <button class="filter-btn active">
+              By Category <span class="arrow">▼</span>
+            </button>
+            <div class="filter-content">
+              <div class="category-title">NUTRITION -</div>
+              <div class="category-item">Protein ()</div>
+              <div class="category-item">Vitamin&Minerals ()</div>
+              <div class="category-item">Nutraceuticals ()</div>
+              <div class="category-item collapsed">BEAUTY CARE +</div>
+              <div class="category-item collapsed">PERSONAL CARE +</div>
+              <div class="category-item collapsed">ENERGY/PERFORMANCE +</div>
+            </div>
+          </div>
+
+          <!-- By Health Goal -->
+          <button class="filter-btn">By Health Goal <span>+</span></button>
+
+          <!-- Advanced Filters -->
+          <button class="filter-btn">Advanced Filters <span>+</span></button>
+        </div>
+      </aside>
+
+      <!-- Products Grid -->
+      <main class="products-section">
+        <div class="products-header">
+          <div></div>
+          <button class="sort-btn">Sort by <span class="arrow">▼</span></button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+          <!-- Products will be dynamically inserted here -->
+        </div>
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-column-logo">
+            <img src="./Group_204-removebg-preview.png" class="footer-icon" />
+            <h4>About</h4>
+          </div>
+          <p>
+            ReaTure is dedicated to providing premium nutrition products for a
+            healthier lifestyle. We believe in natural wellness and sustainable
+            living.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Shipping Info</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Policy</h4>
+          <ul>
+            <li>Return Policy</li>
+            <li>Shipping Policy</li>
+            <li>Refund Policy</li>
+            <li>Cancellation Policy</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company Office Address</h4>
+          <p>
+            123 Green Street<br />Nutrition Plaza<br />Health City - 123456<br />Phone:
+            +91 1234567890<br />Email: info@reature.com
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social-icons">
+          <i class="fa-brands fa-square-facebook social-icon"></i>
+          <i class="fa-brands fa-square-instagram social-icon"></i>
+          <i class="fa-brands fa-square-twitter social-icon"></i>
+          <i class="fa-brands fa-youtube social-icon"></i>
+          <i class="fa-brands fa-linkedin social-icon"></i>
+        </div>
+        <p class="copyright">© All Rights Reserved By ReaTure</p>
+      </div>
+    </footer>
+
+    <script>
+      // Dynamic Product Data
+      const productsData = [
+        {
+          id: 1,
+          name: "ReaTure Plant Protein",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 2,
+          name: "Reocal-D3",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 3,
+          name: "ReaTure Plant Protein",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 4,
+          name: "Reomega 1100-Dha",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 5,
+          name: "Salmon Fish Omega",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 6,
+          name: "Reomega Immunity",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 7,
+          name: "Reocalse Probiotics",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 8,
+          name: "Reomineralised",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 9,
+          name: "Reomega Immunity",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 10,
+          name: "Reaple Multimineral",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 11,
+          name: "Omega Energy Boost",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 12,
+          name: "Bio-Pro Protein Blend",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 13,
+          name: "ReaTure Super Immunity",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 14,
+          name: "Reomega Multivitamin",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 15,
+          name: "Premium Pre-Biotic",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+        {
+          id: 16,
+          name: "Reocalse Plus",
+          category: "Nutrition",
+          weight: "1000g",
+          mrp: 1000,
+        },
+      ];
+
+      // Render Products
+      function renderProducts() {
+        const grid = document.getElementById("productsGrid");
+        grid.innerHTML = "";
+
+        productsData.forEach((product) => {
+          const productCard = document.createElement("div");
+          productCard.className = "product-card";
+          productCard.innerHTML = `
+                    <div class="product-image">
+                        <div class="product-placeholder">📦</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <div class="category-icon"> <img src="nutri.jpg"/> </div>
+                            <span>${product.category}</span>
+                        </div>
+                        <h4 class="product-name">${product.name}</h4>
+                        <p class="product-weight">${product.weight}</p>
+                        <p class="product-price">MRP: ₹ ${product.mrp}</p>
+                        <button class="add-to-cart-btn">Add to Cart <img src="./Shopping_Bag-removebg-preview.png" /></button>
+                    </div>
+                `;
+          grid.appendChild(productCard);
+        });
+      }
+
+      // Initialize
+      renderProducts();
+
+      // Search functionality
+      const filterSearchInput = () => {
+        document
+          .getElementById("searchInput")
+          .addEventListener("input", function (e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const filteredProducts = productsData.filter((product) =>
+              product.name.toLowerCase().includes(searchTerm)
+            );
+
+            const grid = document.getElementById("productsGrid");
+            grid.innerHTML = "";
+
+            filteredProducts.forEach((product) => {
+              const productCard = document.createElement("div");
+              productCard.className = "product-card";
+              productCard.innerHTML = `
+                    <div class="product-image">
+                        <div class="product-placeholder">📦</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">
+                            <div class="category-icon">🌿</div>
+                            <span>${product.category}</span>
+                        </div>
+                        <h4 class="product-name">${product.name}</h4>
+                        <p class="product-weight">${product.weight}</p>
+                        <p class="product-price">MRP: ₹ ${product.mrp}</p>
+                        <button class="add-to-cart-btn">Add to Cart <img src="./Shopping_Bag-removebg-preview.png" /> </button>
+                    </div>
+                `;
+              grid.appendChild(productCard);
+            });
+          });
+      };
+      filterSearchInput();
+
+      const setArrowOnDropdowns = () => {
+        const dropdowns = document.querySelectorAll(".dropdown");
+        const arrow = true
+        dropdowns.forEach((dropdown) => {
+          dropdown.addEventListener("click", () => {
+            if(arrow) {
+                const arrowSign = dropdown.querySelector(".arrowSign");
+                if (arrowSign.style.display === "none" || arrowSign.style.display === "") {
+                  arrowSign.style.display = "inline";
+                } else {
+                  arrowSign.style.display = "none";
+                }
+            }
+          });
+        });
+      };
+      setArrowOnDropdowns();
+    </script>
+  </body>
+</html>
